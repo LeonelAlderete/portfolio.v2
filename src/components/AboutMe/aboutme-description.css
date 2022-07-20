@@ -1,0 +1,36 @@
+.about-container .description-container {
+  grid-area: description;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container .description-container .description-info {
+  background: rgba(2, 0, 32, 0.767);
+  width: 60%;
+  padding: 30px;
+
+  border-radius: 25px;
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.55);
+  border-bottom: 15px solid rgba(65, 28, 231, 0.671);
+}
+
+.about-container .description-container .description-info > h1 {
+  margin-bottom: 15px;
+}
+
+.about-container .description-container .description-info > p {
+  line-height: 21px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container .description-container {
+    margin: 0 10px 120px 10px;
+  }
+
+  .about-container .description-container .description-info {
+    width: 60%;
+  }
+}

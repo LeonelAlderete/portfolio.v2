@@ -1,0 +1,22 @@
+.contact-container {
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+
+  grid-template-areas: "description form";
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+
+    grid-template-areas: "description description" "form form";
+  }
+}

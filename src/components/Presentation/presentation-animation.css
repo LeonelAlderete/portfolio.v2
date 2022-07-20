@@ -1,0 +1,52 @@
+.presentation-container .avatar-container {
+  animation-name: show-avatar;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.presentation-container .welcome-container .welcome-info > h2:nth-child(1),
+h2:nth-child(4),
+p,
+h1 {
+  animation-name: show-presentation-element;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+.presentation-container .welcome-container .welcome-info > h1 {
+  animation-delay: 1.3s;
+}
+
+.presentation-container .welcome-container .welcome-info > h2:nth-child(4) {
+  animation-delay: 1.6s;
+}
+
+.presentation-container .welcome-container .welcome-info > p {
+  animation-delay: 1.9s;
+}
+
+@keyframes show-avatar {
+  from {
+    transform: translateX(150px);
+    opacity: 0%;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes show-presentation-element {
+  from {
+    transform: translateY(30px);
+    opacity: 0%;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}

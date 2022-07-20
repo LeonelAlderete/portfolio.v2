@@ -1,0 +1,23 @@
+.presentation-container {
+  min-height: 100vh;
+  color: white;
+
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+
+  grid-template-areas: "welcome avatar";
+}
+
+@media screen and (max-width: 768px) {
+  .presentation-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto min-content;
+
+    grid-template-areas:
+      "avatar"
+      "welcome";
+  }
+}

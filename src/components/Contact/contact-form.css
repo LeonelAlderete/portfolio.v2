@@ -1,0 +1,65 @@
+.contact-container .form-container {
+  margin: 85px 0;
+
+  grid-area: form;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container .form-container .form-inputs {
+  background: rgba(0, 0, 0, 0.644);
+  width: 80%;
+  padding: 20px;
+
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.55);
+  border-radius: 15px;
+}
+
+.contact-container .form-container .form-inputs .input {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-container .form-container .form-inputs .input > label {
+  margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-container .form-container .form-inputs .input > input,
+textarea {
+  background: rgba(239, 118, 255, 0.26);
+  color: white;
+  margin-bottom: 20px;
+
+  border-radius: 15px;
+  border-color: none;
+  border-style: none;
+  border-width: none;
+}
+
+.contact-container .form-container .form-inputs .input > input {
+  height: 35px;
+}
+
+.contact-container .form-container .form-inputs > form > button {
+  background: darkcyan;
+  color: white;
+  width: 100%;
+  padding: 10px 30px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+
+  border-width: 0;
+  border-radius: 50px;
+  border: 1px solid rgb(0, 58, 31);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container .form-container {
+    margin: 0 0 120px 0;
+  }
+}

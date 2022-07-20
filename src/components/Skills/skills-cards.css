@@ -1,0 +1,87 @@
+.skills-container .cards-list {
+  grid-area: cards-list;
+
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.skills-container .cards-list .card {
+  max-width: 250px;
+  height: fit-content;
+  color: white;
+  background: rgba(0, 0, 0, 0.644);
+  padding: 20px;
+  margin: 0 15px;
+
+  box-shadow: 6px 6px 13px 0px rgba(0, 0, 0, 0.55);
+  border-bottom: 5px solid aqua;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.skills-container .cards-list .card > h4 {
+  background: aqua;
+  color: black;
+  padding: 3px 0;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.skills-container .cards-list .card > p {
+  text-align: center;
+}
+
+.skills-container .cards-list .card .icons {
+  margin: 13px 0;
+  font-size: 40px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.skills-container .cards-list .card .icons .html-icon {
+  color: rgb(255, 74, 29);
+  margin: 0 10px;
+}
+
+.skills-container .cards-list .card .icons .css-icon {
+  color: rgb(26, 60, 252);
+  margin: 0 10px;
+}
+
+.skills-container .cards-list .card .icons .js-icon {
+  color: rgb(250, 231, 60);
+  margin: 0 10px;
+}
+
+.skills-container .cards-list .card .icons .reactjs-icon {
+  color: rgb(32, 84, 255);
+  margin: 0 10px;
+}
+
+.skills-container .cards-list .card .icons .android-icon {
+  color: rgb(32, 255, 125);
+  margin: 0 10px;
+}
+
+.skills-container .cards-list .card .icons .ios-icon {
+  color: rgb(235, 255, 244);
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-container .cards-list {
+    margin-bottom: 120px;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-container .cards-list .card {
+    margin: 10px 15px;
+  }
+}

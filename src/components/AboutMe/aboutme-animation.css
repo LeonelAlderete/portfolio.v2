@@ -1,0 +1,64 @@
+.about-container .photo-container,
+.description-info,
+h1,
+p {
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+
+.about-container .photo-container {
+  animation-name: show-photo;
+  animation-delay: 0.5s;
+}
+
+.about-container .description-container .description-info {
+  animation-name: show-info;
+  animation-delay: 1s;
+}
+
+.about-container .description-container .description-info > h1,
+p {
+  animation-name: show-text;
+}
+
+.about-container .description-container .description-info > h1 {
+  animation-delay: 1.3s;
+}
+
+.about-container .description-container .description-info > p {
+  animation-delay: 1.6s;
+}
+
+@keyframes show-photo {
+  from {
+    transform: translateX(-20px);
+    opacity: 0%;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes show-info {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes show-text {
+  from {
+    transform: translateY(20px);
+    opacity: 0%;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}

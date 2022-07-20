@@ -1,0 +1,21 @@
+.about-container {
+  min-height: 100vh;
+  color: white;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+
+  grid-template-areas: "profile-photo description";
+}
+
+@media screen and (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+
+    grid-template-areas:
+      "profile-photo profile-photo"
+      "description description";
+  }
+}

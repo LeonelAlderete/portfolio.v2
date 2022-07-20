@@ -1,0 +1,17 @@
+.skills-container .title {
+  grid-area: title;
+
+  color: white;
+  height: 230px;
+  text-decoration: underline;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-container .title {
+    height: 130px;
+  }
+}

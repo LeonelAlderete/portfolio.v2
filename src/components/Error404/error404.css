@@ -1,0 +1,33 @@
+.error404-container {
+  min-height: 100vh;
+
+  background: rgba(0, 0, 0, 0.39);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.error404-container .error404-info {
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error404-container .error404-info .icon {
+  color: rgb(214, 57, 57);
+}
+
+.error404-container .error404-info .description {
+  color: white;
+  margin: 0 0 120px 0;
+  text-align: center;
+}
+
+.error404-container .error404-info .description .redirect {
+  font-weight: bold;
+  color: aquamarine;
+}

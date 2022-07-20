@@ -1,0 +1,63 @@
+.contact-container .description-container,
+.form-container {
+  animation-name: show-item;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.contact-container .form-container {
+  animation-name: show-form;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.contact-container .description-container > h1,
+h3,
+p,
+.icon-container,
+.mail {
+  animation-name: show-item;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+
+.contact-container .description-container .description-data .title > h1 {
+  animation-delay: 0.7s;
+}
+
+.contact-container .description-container .description-data .description > h3,
+p {
+  animation-delay: 1s;
+}
+
+.contact-container .description-container .description-data .icon-container {
+  animation-delay: 1.3s;
+}
+
+.contact-container .description-container .description-data > .mail {
+  animation-delay: 1.6s;
+}
+
+@keyframes show-item {
+  from {
+    transform: translateY(20px);
+    opacity: 0%;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 100%;
+  }
+}
+
+@keyframes show-form {
+  from {
+    transform: translateX(20px);
+    opacity: 0%;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+}

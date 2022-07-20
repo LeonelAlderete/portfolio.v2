@@ -1,0 +1,46 @@
+.presentation-container .welcome-container {
+  grid-area: welcome;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.presentation-container .welcome-container .welcome-info {
+  width: 75%;
+  margin: 75px 10px;
+}
+
+.presentation-container .welcome-container .welcome-info > h1 {
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+}
+
+.presentation-container .welcome-container .welcome-info > h2 {
+  margin: 15px 0;
+}
+
+.presentation-container .welcome-container .welcome-info > p {
+  font-family: "Nunito", sans-serif;
+}
+
+.presentation-container .welcome-container .welcome-info .title {
+  color: aqua;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .presentation-container .welcome-container .welcome-info {
+    margin: 0 10px 120px 10px;
+    text-align: center;
+  }
+
+  .presentation-container .welcome-container .welcome-info > h1 {
+    font-size: 50px;
+  }
+
+  .presentation-container .welcome-container .welcome-info > h2 {
+    font-size: 19px;
+  }
+}

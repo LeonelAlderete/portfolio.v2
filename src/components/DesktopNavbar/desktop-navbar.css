@@ -1,0 +1,41 @@
+.desktop-navbar-container {
+  height: 50px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.336);
+  color: white;
+
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+}
+
+.desktop-navbar-container .desktop-logo {
+  width: 170px;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.desktop-navbar-container .desktop-logo > span {
+  font-family: "Roboto Mono", monospace;
+}
+
+.desktop-navbar-container .desktop-options {
+  width: 80%;
+  font-size: 19px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.desktop-navbar-container .desktop-options > span {
+  margin-right: 30px;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-navbar-container {
+    display: none;
+  }
+}
