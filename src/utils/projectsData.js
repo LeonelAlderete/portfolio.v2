@@ -25,7 +25,7 @@ const projectsData = [
     title: "Mi Portfolio",
     description: "Código fuente de mi portfolio :D",
     demoURL: null,
-    githubURL: "https://github.com/LeonelAlderete/my-portfolio",
+    githubURL: "https://github.com/LeonelAlderete/portfolio.v2",
     imageURL: projectsImages[2],
   },
 ];
